@@ -1,5 +1,6 @@
 # name of the Workflow
 name: First Workflow
+
 # trigger
 on: workflow_dispatch
 
@@ -13,6 +14,8 @@ jobs:
         # Steps that will be executed
         steps:
             - name: Print greeting
-              run: echo "Hello world!"              
+              run: |
+                echo "Hello "
+                echo "World!!"
             - name: Print goodbye
               run: echo "Done, bye!"
