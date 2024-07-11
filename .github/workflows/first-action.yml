@@ -14,6 +14,7 @@ jobs:
         # Steps that will be executed
         steps:
             - name: Print greeting
+              # By adding ‘|’, we make the job execute the steps sequentially instead of synchronously
               run: |
                 echo "Hello "
                 echo "World!!"
